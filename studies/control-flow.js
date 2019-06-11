@@ -2,17 +2,18 @@
 /*
 Control flow:
 The use of Conditionals, to determine if a block of code shoulf be exectuted or not.
-The considitionals will check if the expression given evaluates to true or false, if true the code will run. 
-We can use a couple different types of condtional statements:
+The considitionals will check if the expression given evaluates to true or false, if true the
+code will run. We can use a couple different types of condtional statements:
 1. If/else if/else statements
 2. Switch statements
 */
 
-/* 1. If/else if/else statements - chans together block of code that will be run if a the expression before is true.
-Only 1 block of code in an if/else if/ else chain, may run. Anyhting after the code that is run is ignored.
-you start with an if statement, followed by as many else if blocks that you would like.
-The final statement will be an else statement. This can be thought of as the default code to run if none of the
-other statements turn out to return a boolean value of true. 
+/* 1. If/else if/else statements - chans together block of code that will be run if a the 
+expression before is true. Only 1 block of code in an if/else if/ else chain, may run.
+Anyhting after the code that is run is ignored.you start with an if statement, followed 
+by as many else if blocks that you would like. The final statement will be an else statement.
+This can be thought of as the default code to run if none of the other statements turn out
+to return a boolean value of true. 
 */
 
 
@@ -39,10 +40,11 @@ if (2 > 3) {
 // prints => 'now we are cooking with gas'
 
 
-/* 2. Switch statements - switch statments are useful when you might want more than one block of code to be meet. 
-Switch statements are better used when you know the value given, where if else chains are more of a series of checks.
-Switch satements are looking for a true evaluation as well. they are looking for a case to be meet.
-Once a case is meet a break line ends the switch case.
+/* 2. Switch statements - switch statments are useful when you might want more than one block
+of code to be meet. Switch statements are better used when you know the value given, where if
+else chains are more of a series of checks. Switch satements are looking for a true evaluation
+as well. they are looking for a case to be meet. Once a case is meet a break line ends 
+the switch case.
 */
 
 
@@ -71,3 +73,11 @@ switch (color) {
         break;
 }
 // prints => 'here we go'
+
+/*
+It is better to use Switch Statements when we know the value we are checking for, and we 
+want to print something particular based on that value. Rather if/else statementscan do similar
+but, they are used more as a series of checks. So if we are looking for a particular value, it 
+will be easier to use a switch statementso that if the valuegiven is one of those we know what 
+will be printed without it having to run through tests to find the right truthy value.
+*/

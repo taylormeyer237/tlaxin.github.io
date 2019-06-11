@@ -21,8 +21,10 @@ Complex:
 The Difference between Simple and Complex Data types:
 Simple Data types can only hold one type of data
 Complexe Data Types can hold any number of data and data types
-Simple data types are copy by value,meaning they are taking a cpy of the value and setting it equal to that copy
-Complex data types are copy by reference, meaing they reference where the value is being stored and equal to the value being referenced
+Simple data types are copy by value, meaning they are taking a copy of the value and 
+setting it equal to that copy. 
+Complex data types are copy by reference, meaing they reference where the value is being
+stored and equal to the value being referenced.
 */
 
 
@@ -51,8 +53,9 @@ console.log(myDog.length)  //  returns 9
 
 /* 3. Boolean: 
 Booleans return true or false values. 
-Normally are used to setermine if an action will take place, depending on the result of the boolean.
-Can be thought of as an on/off switch, you see use them often when dealing with conditionals.
+Normally are used to setermine if an action will take place, depending on the result 
+of the boolean. Can be thought of as an on/off switch, you see use them often when dealing
+with conditionals.
 */
 
 console.log(2 > 3); // prints => false
@@ -75,8 +78,8 @@ console.log(fruit);  // prints apple
 
 // Complex
 // 1. Array: 
-// arrays are lists of data. Arrays are identified by [], and can hold any type of data. Arrays are  zero
-// indexed.
+// arrays are lists of data. Arrays are identified by [], and can hold any type of data.
+// Arrays are  zero indexed.
 
 var myArr = [];
 console.log(myArr); // prints => []
@@ -143,8 +146,46 @@ console.log(sum(2,3)); // prints 5
 //Infinity:
 // the infinity data type is set up to the mathimatical infinity
 // if you try to do any math to inifinty you will get back infintiy
+console.log(Infinity); //prints Infinity
+console.log(-Infinity); //prints -Infinity
+// this works justt like the mathmatical infinity
+console.log(Infinity/2) //prints Infinity
+console.log(-Infinity*2)  //prints -Infinity
 
+/*
+The Difference between Simple and Complex Data types:
+Simple Data types can only hold one type of data. If you do an operation to a simple data
+type it will return a new simple data value. Complexe Data Types can hold any number of data
+and data types. Simple data types are copy by value, meaning they are taking a copy of the
+value and setting it equal to that copy. Complex data types are copy by reference, meaing 
+they reference where the value is being stored and equal to the value being referenced.
+*/
 
+var a = 7;
+var b = a;
+console.log(b); // prints 7
+b = 23;
+console.log(a); // prints  7
+console.log(b); // prints  23
 
+/* When b is assigned it is equaled to a so its taking the value stored into a which is why
+it prints out 7. When we reassign it a new number, 23, when we call the variable b again it
+prints out 23, while when we call a it prints out 7. This is because we never changed a, but
+when we reassigned b to a new value it no longer equals a. Copy by Value
+*/
+
+/* When we do the same with a complex data type it will reference the same information and so
+when changing one it will change both.
+*/
+var c = {key1: 'granola',
+         key2: 'chips',
+         key3: 'cookie'
+};
+var d = c;
+console.log(d); // prints => {key1: 'granola', key2: 'chips', key3: 'cookie'}
+d.key1 = 'orange';
+console.log(c); // prints => {key1: 'orange', key2: 'chips', key3: 'cookie'}
+// When we change the key1 in d, it changes the key1 in c as well.
+// this is copy by refernce.
 
  
